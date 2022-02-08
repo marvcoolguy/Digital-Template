@@ -9,6 +9,7 @@ html {
 }
 
 body {
+    font-size: 16px;
     width: 100vw;
     height: 100vh;
     color: white;
@@ -29,7 +30,8 @@ body {
 }
 
 .top {
-    margin-left: 40px;
+    margin-left: 20px;
+    display: flex;
 }
 
 .top h4 {
@@ -154,8 +156,9 @@ body {
 
 /* Section 3 */
 .our-services {
+    background: yellow;
     color: black;
-    height: 600px;
+    min-height: 600px;
     width: 100%;
     display: flex;
 }
@@ -221,4 +224,111 @@ body {
     position: absolute;
     right: 200px;
     bottom: 150px;
+}
+
+
+/* Section 4 */
+.portfolio {
+    background-color: white;
+    width: 100%;
+    min-height: 600px;
+    color: black;
+    text-align: center;
+}
+
+.small-heading {
+    text-transform: uppercase;
+    color: rgb(84, 84, 216);
+    margin-top: 30px;
+    text-align: center;
+}
+
+.main-heading {
+    margin-top: 30px;
+    font-size: 59px;
+    margin-bottom: 105px;
+    color: black;
+    text-align: center;
+}
+
+
+.grid-image {
+    height: 350px;
+    width: 300px;
+    display: block;
+}
+
+.grid-image:hover {
+    transform: translateY(-15px);
+}    
+
+
+.grid{
+    padding: 0 3rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 300px;
+    place-items: center;
+}
+
+/* Section 5 */
+.portfolio-the-staff {
+    background-color: white;
+    width: 100%;
+    min-height: 650px;
+    color: black;
+    text-align: center;
+}
+
+.card {
+    width: 290px;
+    height: 350px;
+    background-color: red;
+}
+
+.card:hover {
+    transform: translateY(-15px);
+}
+
+.card-body {
+    background-color: rgb(90, 90, 189);
+    width: 290px;
+    height: 100px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.grid-image2 {
+    height: 250px;
+    width: 290px;
+    display: block;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+}
+
+.text h5 {
+    margin-right: 35px;
+}
+
+a {
+    margin-left: 10px;
+    color: white;
+}
+
+a:hover {
+    color: red;
+}
+
+@media screen and (max-width: 765px){  
+.grid{
+    padding: 0 1rem;
+    grid-template-columns:  1fr;
+}
+    
 }
