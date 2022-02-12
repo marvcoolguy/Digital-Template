@@ -271,33 +271,21 @@ body {
 .grid-image1 {
     height: 350px;
     width: 300px;
-    background-image: url(./Images/flower.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 
 .grid-image2 {
     height: 350px;
     width: 300px;
-    background-image: url(./Images/Bottle.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 
 .grid-image3 {
     height: 350px;
     width: 300px;
-    background-image: url(./Images/potted-plant.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 
 .grid-image4 {
     height: 350px;
     width: 300px;
-    background-image: url(./Images/Books.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 
 .grid-image1:hover,
@@ -335,7 +323,7 @@ body {
     justify-content: space-around;
 }
 
-.grid-image2 {
+.grid-image5 {
     height: 250px;
     width: 290px;
     display: block;
