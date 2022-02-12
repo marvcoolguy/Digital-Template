@@ -152,6 +152,10 @@ body {
     position: absolute;
     right: 100px;
     bottom: 150px;
+    background-image: url(/Images/computer.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 /* Section 3 */
@@ -219,11 +223,15 @@ body {
 }
 
 .position2 {
-    width: 400px;
+    width: 450px;
     height: 500px;
     position: absolute;
     right: 200px;
     bottom: 150px;
+    background-image: url(/Images/Old-man.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 
@@ -251,18 +259,6 @@ body {
     text-align: center;
 }
 
-
-.grid-image {
-    height: 350px;
-    width: 300px;
-    display: block;
-}
-
-.grid-image:hover {
-    transform: translateY(-15px);
-}    
-
-
 .grid{
     padding: 0 3rem;
     display: grid;
@@ -270,6 +266,46 @@ body {
     grid-template-rows: 300px;
     place-items: center;
 }
+
+
+.grid-image1 {
+    height: 350px;
+    width: 300px;
+    background-image: url(/Images/flower.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.grid-image2 {
+    height: 350px;
+    width: 300px;
+    background-image: url(/Images/Bottle.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.grid-image3 {
+    height: 350px;
+    width: 300px;
+    background-image: url(/Images/potted-plant.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.grid-image4 {
+    height: 350px;
+    width: 300px;
+    background-image: url(/Images/Books.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.grid-image1:hover,
+.grid-image2:hover, 
+.grid-image3:hover, 
+.grid-image4:hover {
+    transform: translateY(-15px);
+}    
 
 /* Section 5 */
 .portfolio-the-staff {
@@ -283,7 +319,6 @@ body {
 .card {
     width: 290px;
     height: 350px;
-    background-color: red;
 }
 
 .card:hover {
@@ -309,7 +344,6 @@ body {
 .text {
     display: flex;
     flex-direction: column;
-    background-color: red;
 }
 
 .text h5 {
