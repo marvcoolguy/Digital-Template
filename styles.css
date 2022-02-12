@@ -51,6 +51,7 @@ body {
     background-position: center top;
     background-blend-mode: rgb(38, 110, 243);
     background-repeat: no-repeat;
+    background-color: red;
     width: 60%;
     height: 800px;
 }
