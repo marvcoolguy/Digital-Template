@@ -46,12 +46,11 @@ body {
 }
 
 .right {
-    background-image: url(Images/model.jpg);
+    background-image: url(./Images/model.jpg);
     background-size: cover;
     background-position: center top;
     background-blend-mode: rgb(38, 110, 243);
     background-repeat: no-repeat;
-    background-color: red;
     width: 60%;
     height: 800px;
 }
@@ -153,7 +152,7 @@ body {
     position: absolute;
     right: 100px;
     bottom: 150px;
-    background-image: url(/Images/computer.jpg);
+    background-image: url(./Images/computer.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -229,7 +228,7 @@ body {
     position: absolute;
     right: 200px;
     bottom: 150px;
-    background-image: url(/Images/Old-man.jpg);
+    background-image: url(./Images/Old-man.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -272,7 +271,7 @@ body {
 .grid-image1 {
     height: 350px;
     width: 300px;
-    background-image: url(/Images/flower.jpg);
+    background-image: url(./Images/flower.jpg);
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -280,7 +279,7 @@ body {
 .grid-image2 {
     height: 350px;
     width: 300px;
-    background-image: url(/Images/Bottle.jpg);
+    background-image: url(./Images/Bottle.jpg);
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -288,7 +287,7 @@ body {
 .grid-image3 {
     height: 350px;
     width: 300px;
-    background-image: url(/Images/potted-plant.jpg);
+    background-image: url(./Images/potted-plant.jpg);
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -296,7 +295,7 @@ body {
 .grid-image4 {
     height: 350px;
     width: 300px;
-    background-image: url(/Images/Books.jpg);
+    background-image: url(./Images/Books.jpg);
     background-size: contain;
     background-repeat: no-repeat;
 }
