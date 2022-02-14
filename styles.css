@@ -21,7 +21,7 @@ body {
     height: 100vh;
 }
 
-/* Section 2 */
+/* Section 1 */
 .showcase {
     height: 800px;
     width: 100%;
@@ -77,11 +77,12 @@ body {
     line-height: 1.5em;
 }
 
-.medium {
+.small-heading {
     font-size: 18px;
     margin-bottom: 5px;
     margin-top: 200px;
     text-transform: uppercase;
+    color: blue;
 }
 .btn {
     font-weight: 500;
@@ -125,7 +126,7 @@ body {
     padding-top: 10px;
 }
 
-.medium2 {
+.small-heading2 {
     font-size: 15px;
     margin-bottom: 30px;
     margin-top: 180px;
@@ -199,7 +200,7 @@ body {
     margin-left: 40px;
 }
 
-.medium3 {
+.small-heading3 {
     margin-top: 70px;
     margin-bottom: 30px;
     text-transform: uppercase;
@@ -244,7 +245,7 @@ body {
     text-align: center;
 }
 
-.small-heading {
+.small-heading4 {
     text-transform: uppercase;
     color: rgb(84, 84, 216);
     margin-top: 30px;
@@ -347,10 +348,88 @@ a:hover {
     color: red;
 }
 
+/* Section 6 */
+.contact {
+    height: 730px;
+    width: 100%;
+    color: black;
+    display: flex;
+}
+
+.left4 {
+    background-color: white;
+    width: 60%;
+    height: 730px;
+}
+
+.main4 {
+    margin-left: 100px;
+}
+
+.main4 h1 {
+    font-size: 59px;
+    margin-bottom: 95px;
+}
+
+
+.small-heading5 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: rgb(84, 84, 216);
+    line-break: loose;
+}
+
+.flex3 {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding-bottom: 10px;
+    padding-left: 2px;
+    margin-bottom: 40px;
+    border: none;
+    border-bottom: 1px solid rgb(201, 199, 199);
+}
+
+textarea {
+    padding-bottom: 10px;
+    padding-left: 2px;
+    margin-bottom: 40px;
+    border: none;
+    border-bottom: 1px solid rgb(201, 199, 199);
+}
+
+.right4 {
+    background-color: rgb(38, 110, 243);
+    width: 43%;
+    height: 730px;
+}
+
 @media screen and (max-width: 765px){  
+body {
+    width: 100%;
+}
+
+.left,
+.left2,
+.left3 {
+    width: 100%;
+}
+
+.right,
+.right2,
+.right3,
+.position,
+.position2 {
+    display: none;
+}
+
 .grid{
     padding: 0 1rem;
     grid-template-columns:  1fr;
+    justify-content: center;
 }
     
 }
