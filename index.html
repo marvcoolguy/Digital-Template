@@ -12,24 +12,26 @@
 <body>
     <div class="container">
         <div class="showcase">
-            <div class="left">
-                <div class="top">
-                    <div class="icons">
-                        <i class="fa-solid fa-d fa-2x"></i>
-                    </div>
-                    <div class="text">
-                        <h4>deep</h4>
-                        <p class="small">EDGE</p>
-                    </div>
+            <div class="top">
+                <div class="icons">
+                    <i class="fa-solid fa-d fa-2x"></i>
                 </div>
-                <div class="main">
-                    <p class="small-heading">We are creative</p>
-                    <h1>Digital Agency</h1>
-                    <p class="style">We pride our selves in great work ethic, integrity and end-results.</p>
-                 <a href="index.html"><input type="button" value="Get started" class = "btn"></a>
+                <div class="text">
+                    <h4>deep</h4>
+                    <p class="small">EDGE</p>
                 </div>
             </div>
-            <div class="right"></div>
+            <div class="showcase-grid">
+                <div class="left">
+                    <div class="main">
+                        <p class="small-heading">We are creative</p>
+                        <h1>Digital Agency</h1>
+                        <p class="sub-text">We pride our selves in great work ethic, integrity and end-results.</p>
+                     <a href="index.html"><input type="button" value="Get started" class = "btn"></a>
+                    </div>
+                </div>
+                <div class="right"></div>
+            </div>
         </div>
 
         <div class="about-us">
@@ -37,15 +39,14 @@
                 <div class="main2">
                     <p class="small-heading2">Who we are</p>
                     <h1 class="color">About Agency</h1>
-                    <p class="style2">We are deep group. Our company philosophy is to create the kind of website that most buisiness want: easy to find, stylish and appealing, quick loading, mobile responsive and easy to buy from.</p>
-                    <p class="margin style2">Trained as industrial designers we have a deep-rooted belief in rational approach is focused on revealing the essence of each design challenge to allow us to create holistic and durable solutions.</p>
+                    <p class="lead-text">We are deep group. Our company philosophy is to create the kind of website that most buisiness want: easy to find, stylish and appealing, quick loading, mobile responsive and easy to buy from.</p>
+                    <p class="sub-text">Trained as industrial designers we have a deep-rooted belief in rational approach is focused on revealing the essence of each design challenge to allow us to create holistic and durable solutions.</p>
                 </div>
                 <div class="position"></div>
             </div>
-            <div class="right2"></div>
         </div>
 
-        <div class="our-services">
+        <div class="our-services  display__none">
             <div class="left3">
                 <div class="main3">
                     <div class="small-heading3">WHAT WE DO</div>
@@ -65,7 +66,7 @@
                             <h3>Website Design</h3>
                             <p>Building and launching your website is just the start. It must work properly.</p>
                         </div>
-                        <div class="wrapper2">
+                        <div class="wrapper wrapper2">
                             <h3>SEO optimization</h3>
                             <p>SEO can help your website to feature prominently on all search engines.</p>
                         </div>
@@ -77,18 +78,18 @@
             </div>
         </div>
 
-        <div class="portfolio">
+        <div class="portfolio  display__none">
             <p class="small-heading4">Our Works</p>
             <h1 class="main-heading">Portfolio</h1>
             <div class="grid">
-              <img src="./Images/flower.jpg" alt="" class="grid-image1">
-              <img src="./Images/Bottle.jpg" alt="" class="grid-image2">
-              <img src="./Images/potted-plant.jpg" alt="" class="grid-image3">
-              <img src="./Images/Books.jpg" alt="" class="grid-image4">
+              <img src="./Images/flower.jpg" alt="" class="grid-image1 grid-image">
+              <img src="./Images/Bottle.jpg" alt="" class="grid-image2 grid-image">
+              <img src="./Images/potted-plant.jpg" alt="" class="grid-image3 grid-image">
+              <img src="./Images/Books.jpg" alt="" class="grid-image4 grid-image">
             </div>
         </div>
 
-        <div class="portfolio-the-staff">
+        <div class="portfolio-the-staff ">
             <p class="small-heading4">Meet the staff</p>
             <h1 class="main-heading">Our Team</h1>
             <div class="grid">
@@ -110,7 +111,7 @@
                 </div>
                 <div class="card">
                     <div class="card-image">
-                        <img src="./Images/Man.jpg" alt="" class="grid-image5">
+                        <img src="./Images/Woman.jpg" alt="" class="grid-image5">
                     </div>
                     <div class="card-body">
                         <div class="text">
@@ -126,7 +127,7 @@
                 </div>
                 <div class="card">
                     <div class="card-image">
-                        <img src="./Images/Man.jpg" alt="" class="grid-image5">
+                        <img src="./Images/Developer.jpg" alt="" class="grid-image5">
                     </div>
                     <div class="card-body">
                         <div class="text">
@@ -142,7 +143,7 @@
                 </div>
                 <div class="card">
                     <div class="card-image">
-                        <img src="./Images/Man.jpg" alt="image of a man" class="grid-image5">
+                        <img src="./Images/Designer.jpg" alt="image of a man" class="grid-image5">
                     </div>
                     <div class="card-body">
                         <div class="text">
@@ -159,23 +160,25 @@
             </div>
         </div>
 
-        <div class="contact">
+        <div class="contact  display__none">
             <div class="left4">
-                <div class="main4 main">
+                <div class="main4">
                     <div class="small-heading5">Keep in touch</div>
                     <h1>Contact us</h1>
-                    <form action="/action_page.php">
+                    <form action="https://marvcoolguy.github.io/Digital-Template/">
                         <div class="flex3">
-                            <input type="text" name="name" id="fname" placeholder="Name">
-                            <input type="email" name="email" id="email" placeholder="Email">
-                            <input type="text" name="subject" id="subject" placeholder="Subject">
-                            <textarea name="textarea" id="textarea" cols="30" rows="5" placeholder="Message"></textarea>
+                            <input type="text" name="name" id="fname" placeholder="Name" required>
+                            <input type="email" name="email" id="email" placeholder="Email" required>
+                            <input type="text" name="subject" id="subject" placeholder="Subject" required>
+                            <textarea name="textarea" id="textarea" cols="30" rows="5" placeholder="Message" required></textarea>
+                            <input type="submit" value="Submit" class="button">
                         </div>
                     </form>
                 </div>
             </div>
             <div class="right4"></div>
         </div>
-    </div>
+    </div>  
 </body>
 </html>
+ind

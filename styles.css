@@ -4,9 +4,10 @@
     box-sizing: border-box;
 }
 
-html {
+/* html {
     scroll-behavior: smooth;
-}
+} */
+
 
 body {
     font-size: 16px;
@@ -16,22 +17,38 @@ body {
     font-family: sans-serif;
 }
 
-.container {
-    width: 100%;
-    height: 100vh;
-}
-
 /* Section 1 */
 .showcase {
     height: 800px;
-    width: 100%;
-    display: flex;
-    background-color: rgb(27, 101, 126);
+    background-color: rgb(38, 110, 243);
+    position: relative;
+}
+
+.showcase-grid {
+    height: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+    .showcase-grid {
+        display: flex;
+    }
+    
 }
 
 .top {
-    margin-left: 20px;
+    position: absolute;
+    top: 2%;
+    left: 4%;
     display: flex;
+}
+
+@media screen and (min-width: 1024px) {
+    .top {
+    
+        top: 2%;
+        left: 1%;
+        
+    }
 }
 
 .top h4 {
@@ -39,20 +56,34 @@ body {
 }
 
 .left {
-    width: 43%;
-    height: 800px;
-    background-color: rgb(38, 110, 243);
     padding-top: 10px;
 }
+
+@media screen and (min-width: 1024px) {
+    .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        flex-basis: 45%;
+    }
+}
+
 
 .right {
     background-image: url(./Images/model.jpg);
     background-size: cover;
-    background-position: center top;
+    background-position: center center;
     background-blend-mode: rgb(38, 110, 243);
     background-repeat: no-repeat;
-    width: 60%;
-    height: 800px;
+    height: 50%;
+}
+
+@media screen and (min-width: 1024px) {
+    .right {
+        height: 100%;
+        flex: 1;
+    }
 }
 
 .small {
@@ -60,8 +91,21 @@ body {
 }
 
 .main {
-    margin-left: 80px;
-    width: 480px;
+    text-align: center;
+    padding: 70px 20px 40px;
+}
+
+@media screen and (min-width: 1024px) {
+    .main {
+        padding:0 60px;
+        text-align: unset;
+    }
+}
+
+.small-heading {
+    font-size: 18px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
 }
 
 .main h1 {
@@ -70,26 +114,18 @@ body {
     margin-bottom: 20px;
 }
 
-.style {
-    width: 80%;
-    font-size: 24px;
+.sub-text {
+    font-size: 16px;
     margin-bottom: 24px;
     line-height: 1.5em;
 }
 
-.small-heading {
-    font-size: 18px;
-    margin-bottom: 5px;
-    margin-top: 200px;
-    text-transform: uppercase;
-    color: blue;
-}
 .btn {
-    font-weight: 500;
+    font-weight: bold;
     background-color: white;
     color: black;
     margin-top: 20px;
-    padding: 25px 52px;
+    padding: 20px 42px;
     border-radius: 2px;
     border: none;
     cursor: pointer;
@@ -107,9 +143,47 @@ body {
     position: relative;
 }
 
+@media screen and (min-width: 1024px){
+    .about-us {
+        height: 800px;
+    }
+    
+}
+
+.left2 {
+    background-color: black;
+    padding: 5px 10px;
+}
+
+
+@media screen and (min-width: 1024px){
+.left2 {
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+}
+
+.small-heading2 {
+    margin-top: 20px;
+    font-size: 15px;
+    color: rgb(84, 84, 216);
+    text-transform: uppercase;
+}
+
 .main2 {
-    margin-left: 105px;
-    width: 450px;
+    text-align: center;
+}
+@media screen and (min-width: 1024px){
+    .main2 {
+        text-align: unset;
+        width: 80%;
+    }
+    
 }
 
 .main2 h1 {
@@ -118,77 +192,135 @@ body {
     margin-bottom: 30px;
 }
 
-
-.left2 {
-    width: 50%;
-    height: 800px;
-    background-color: black;
-    padding-top: 10px;
-}
-
-.small-heading2 {
-    font-size: 15px;
-    margin-bottom: 30px;
-    margin-top: 180px;
-    color: rgb(84, 84, 216);
-    text-transform: uppercase;
-}
-
-.style2 {
+.about-us .lead-text, .about-us .sub-text {
     width: 95%;
-    line-height: 1.7em;
+    font-size: 16px;
+    line-height: 1.5em;
+       
 }
 
-.margin {
+.about-us h1{
+    color: rgb(84, 84, 216);
+}
+
+.about-us .sub-text{
     margin-top: 30px;
 }
 
-.color {
-    color: rgb(84, 84, 216);
+@media screen and (min-width: 1024px)
+ {
+    .position {
+        width: 650px;
+        height: 500px;
+        position: absolute;
+        right: 80px;
+        bottom: 150px;
+        background-image: url(./Images/computer.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
 }
 
-.position {
-    width: 700px;
-    height: 500px;
-    position: absolute;
-    right: 100px;
-    bottom: 150px;
-    background-image: url(./Images/computer.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
+
 
 /* Section 3 */
 .our-services {
-    background: yellow;
+    background: white;
     color: black;
-    min-height: 600px;
-    width: 100%;
+    min-height: 800px;
     display: flex;
 }
 
 .left3 {
-    width: 60%;
-    height: 800px;
-    background-color: white;
+    height: 400px;
     padding-top: 10px;
 }
 
+@media screen and (min-width: 1024px)
+ {
+    .left3 {
+        height: 400px;
+        width: 70%;
+        padding-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 10px 30px;
+    }
+}
+
+
 .main3 {
-    margin-left: 105px;
-    width: 480px;
+    text-align: center;
 }
 
 .main3 h1 {
     font-size: 59px;
-    margin-bottom: 140px;
 }
 
-.wrapper h3{
-    margin-left: 70px;
+@media screen and (min-width: 1024px)
+ {
+    .main3 {
+        text-align: unset;
+    }
 }
 
+.main3 h1 {
+    margin-bottom: 60px;
+}
+
+.small-heading3 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: rgb(84, 84, 216);
+}
+
+@media screen and (min-width: 1024px)
+ {
+    .small-heading3 {
+        margin-top: 70px;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        color: rgb(84, 84, 216);
+    }
+    
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex2 {
+    margin-top: 40px;
+}
+
+@media screen and (min-width: 1024px)
+ {
+    .flex {
+        display: flex;
+        flex-direction: row;
+        width: 600px;
+    }
+    
+    .flex2 {
+        margin-top: 120px;
+    }
+}
+
+.wrapper {
+    margin-top: 30px;
+}
+
+@media screen and (min-width: 1024px)
+ {
+    .wrapper {
+        margin-top: unset;
+    }
+    
+}
 
 .wrapper p {
     margin-top: 10px;
@@ -196,45 +328,40 @@ body {
     line-height: 1.7em;
 }
 
-.wrapper2 {
-    margin-left: 40px;
+@media screen and (min-width: 1024px)
+ {
+    .wrapper2 {
+        margin-left: 40px;
+    }
+
+    .wrapper h3{
+        margin-left: 70px;
+    }
+    
 }
 
-.small-heading3 {
-    margin-top: 70px;
-    margin-bottom: 30px;
-    text-transform: uppercase;
-    color: rgb(84, 84, 216);
-}
+@media screen and (min-width: 1024px)
+ {
+    .right3 {
+        width: 50%;
+        height: 800px;
+        background-color: rgb(38, 110, 243);
+        position: relative;
+    }
 
-.flex {
-    display: flex;
-    width: 600px;
+    .position2 {
+        width: 450px;
+        height: 500px;
+        position: absolute;
+        right: 150px;
+        bottom: 150px;
+        background-image: url(./Images/Old-man.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    
 }
-
-.flex2 {
-    margin-top: 120px;
-}
-
-.right3 {
-    width: 40%;
-    height: 800px;
-    background-color: rgb(38, 110, 243);
-    position: relative;
-}
-
-.position2 {
-    width: 450px;
-    height: 500px;
-    position: absolute;
-    right: 200px;
-    bottom: 150px;
-    background-image: url(./Images/Old-man.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
 
 /* Section 4 */
 .portfolio {
@@ -255,46 +382,40 @@ body {
 .main-heading {
     margin-top: 30px;
     font-size: 59px;
-    margin-bottom: 105px;
+    margin-bottom: 80px;
     color: black;
     text-align: center;
 }
 
-.grid{
-    padding: 0 3rem;
+.grid {
     display: grid;
+    gap: 20px;
+    grid-template-columns:  1fr;
+    place-items: center;
+}      
+
+@media screen and (min-width: 1024px){  
+.grid {
+    padding: 0 2rem;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 300px;
-    place-items: center;
+    justify-content: space-around;
 }
-
-
-.grid-image1 {
-    height: 350px;
-    width: 300px;
 }
-
-.grid-image2 {
-    height: 350px;
-    width: 300px;
-}
-
-.grid-image3 {
-    height: 350px;
-    width: 300px;
-}
-
+.grid-image1,
+.grid-image2,
+.grid-image3,
 .grid-image4 {
     height: 350px;
     width: 300px;
 }
 
-.grid-image1:hover,
-.grid-image2:hover, 
-.grid-image3:hover, 
-.grid-image4:hover {
-    transform: translateY(-15px);
-}    
+@media screen and (min-width: 1024px){  
+    .grid-image:hover {
+        transform: translateY(-15px);
+    }
+}
+
 
 /* Section 5 */
 .portfolio-the-staff {
@@ -310,8 +431,11 @@ body {
     height: 350px;
 }
 
+@media screen and (min-width: 1024px) {
+    
 .card:hover {
     transform: translateY(-15px);
+}
 }
 
 .card-body {
@@ -358,19 +482,40 @@ a:hover {
 
 .left4 {
     background-color: white;
-    width: 60%;
     height: 730px;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 1024px) {
+.left4 {
+    width: 60%;
+    justify-content: unset;
+}
 }
 
 .main4 {
+   text-align: center;
+   padding: 0 40px;
+}
+
+@media screen and (min-width: 1024px){
+.main4 {
     margin-left: 100px;
+    padding: unset;
+}
 }
 
 .main4 h1 {
-    font-size: 59px;
     margin-bottom: 95px;
+    font-size: 30px;
 }
 
+@media screen and (min-width: 1024px){
+.main4 h1 {
+    font-size: 59px;
+}
+}
 
 .small-heading5 {
     margin-top: 30px;
@@ -386,20 +531,51 @@ a:hover {
 }
 
 input {
+    width: 100%;
     padding-bottom: 10px;
     padding-left: 2px;
     margin-bottom: 40px;
     border: none;
     border-bottom: 1px solid rgb(201, 199, 199);
+    outline: none;
+}
+
+@media screen and (min-width: 1024px){
+input,
+textarea {
+    width: unset;
+}
 }
 
 textarea {
+    width: 100%;
     padding-bottom: 10px;
     padding-left: 2px;
     margin-bottom: 40px;
     border: none;
     border-bottom: 1px solid rgb(201, 199, 199);
+    outline: none;
 }
+
+.button {
+    margin: auto;
+    width: 150px;
+    font-weight: bold;
+    background-color: rgb(38, 110, 243);
+    color: white;
+    margin-top: 20px;
+    padding: 20px 42px;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgb(39, 38, 38);
+}
+
+.button:hover {
+    transform: scale(0.98);;
+}
+
+@media screen and (min-width: 1024px){
 
 .right4 {
     background-color: rgb(38, 110, 243);
@@ -407,29 +583,32 @@ textarea {
     height: 730px;
 }
 
-@media screen and (max-width: 765px){  
-body {
-    width: 100%;
 }
 
-.left,
-.left2,
-.left3 {
-    width: 100%;
+html::-webkit-scrollbar {
+    width: 1vw;
+    height: 1vw;
 }
 
-.right,
-.right2,
-.right3,
-.position,
-.position2 {
-    display: none;
+html::-webkit-scrollbar-track {
+    background-color: white;
+    border-radius: 100vw;
+    border: 1px solid rgb(247, 243, 243);
 }
 
-.grid{
-    padding: 0 1rem;
-    grid-template-columns:  1fr;
-    justify-content: center;
+html::-webkit-scrollbar-thumb {
+    background-color: purple;
+    border-radius: 100vw;
+    border: 2px solid white;
 }
-    
+
+html::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(82, 7, 82);
 }
+
+html::-webkit-scrollbar-thumb:focus {
+    background-color: rgb(82, 7, 82);
+}
+
+
+
