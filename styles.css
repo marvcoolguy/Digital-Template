@@ -132,6 +132,7 @@ body {
     box-shadow: 5px 5px 10px rgb(39, 38, 38);
 }
 
+
 .btn:hover {
     transform: scale(0.98);
     background-color: black;
@@ -530,7 +531,10 @@ a:hover {
     flex-direction: column;
 }
 
-input {
+input[type="text"],
+input[type="email"],
+input[type="subject"],
+textarea {
     width: 100%;
     padding-bottom: 10px;
     padding-left: 2px;
@@ -541,21 +545,11 @@ input {
 }
 
 @media screen and (min-width: 1024px){
-input,
-textarea {
+    textarea {
     width: unset;
-}
-}
+    }
+}    
 
-textarea {
-    width: 100%;
-    padding-bottom: 10px;
-    padding-left: 2px;
-    margin-bottom: 40px;
-    border: none;
-    border-bottom: 1px solid rgb(201, 199, 199);
-    outline: none;
-}
 
 .button {
     margin: auto;
@@ -569,9 +563,9 @@ textarea {
     border: none;
     cursor: pointer;
     box-shadow: 5px 5px 10px rgb(39, 38, 38);
-}
+} 
 
-.button:hover {
+.button2:hover {
     transform: scale(0.98);;
 }
 
